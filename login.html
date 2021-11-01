@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./login.css">
+<title>Login|Okiro</title>
+</head>
+<body>
+    <div class="container right-panel-active">
+       
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" placeholder="User" class="input" />
+                <input type="email" placeholder="Email" class="input" />
+                <input type="password" placeholder="Password" class="input" />
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+    
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <input type="email" placeholder="Email" class="input" id="user" />
+                <input type="password" placeholder="Password" class="input" id="password" />
+                <a href="#" class="link">Forgot your password?</a>
+                <input class="btn" type="submit" id="btnlogin" >
+            </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+            const signInBtn = document.getElementById("signIn");
+            const signUpBtn = document.getElementById("signUp");
+            const fistForm = document.getElementById("form1");
+            const secondForm = document.getElementById("form2");
+            const container = document.querySelector(".container");
+
+            signInBtn.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+
+            signUpBtn.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+
+            fistForm.addEventListener("submit", (e) => e.preventDefault());
+            secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+            var user=document.getElementById('user');
+		var password=document.getElementById('password');
+		var btnlogin=document.getElementById('btnlogin');
+
+		function login(){
+			if(user.value.length==0 || password.value.length==0){
+				alert('Vui Lòng Nhập Đầy Đủ Thông Tin')
+			}
+			else if(user.value == 'admin' && password.value == '123'){
+				alert('Đăng Nhập Thành Công');
+				// console.log(location.href)
+				location.href = '/index.html';
+			}
+			else{
+				alert('Đăng Nhập Không Thành Công')
+			}
+			
+		}
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" type="image/png" href="./lg.jpg">
+    <title>Phim Bộ - Xem Phim Miễn Phí</title>
+</head>
+
+<body>
+    <div class="global-wrap">
+        <header class="header-main">
+            <div class="toggle" id="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="together">
+                <div class="header-wrap" id="header">
+                    <div class="logo">
+                        <img src="./tet-2021.svg" alt="logo" />
+                    </div>
+                    <div class="menu">
+                        <ul class="main-menu">
+                            <li><a href="">Home</a></li>
+                            <li class="dropdown">
+                                <span>Thể Loại</span>
+                                <div class="dropdown-box">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-content dropdown-2">
+                                            <a class="dropdown-item" href="./khoahoc.html">Khoa Học - Viễn Tưởng</a>
+                                            <a class="dropdown-item" href="#">Cổ Trang - Thần Thoại</a>
+                                        </div>
+                                        <div class="dropdown-content dropdown-2">
+                                            <a class="dropdown-item" href="#">Tài Liệu - Khám Phá</a>
+                                            <a class="dropdown-item" href="#">Hình Sự - Chiến Tranh</a>
+
+                                        </div>
+                                        <div class="dropdown-content dropdown-2">
+                                            <a class="dropdown-item" href="#">Kinh Dị - Ma</a>
+                                            <a class="dropdown-item" href="#">Tâm Lý - Tình Cảm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <span>Phim Bộ</span>
+                                <div class="dropdown-box dropdown-boxing">
+                                    <div class="dropdown-content">
+                                        <a class="dropdown-item" href="#">Việt Nam</a>
+                                        <a class="dropdown-item" href="#">Trung Quốc</a>
+                                        <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Phim Chiếu Rạp</a></li>
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <ul>
+                            <li class="search-input">
+                                <div class="searchbox" onClick="onClick(event)">
+                                    <input type="text" onFocus="onFocus()" onBlur="onBlur()"
+                                        placeholder="Tìm kiếm tên phim" />
+                                    <button>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section-1 class="section-1">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./slider1.jpg" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./slider2.jpg" alt="Chicago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./slider3.jpg" alt="New York">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </section-1>
+                <section-2 class="section-2">
+                    <div class="text-1">
+                        <span>Phim Thịnh Hành</span>
+                        <span class="active"></span>
+                    </div>
+                    <div class="main-fiml">
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim1.jpg" alt="" /></a>
+                                    <span><a href="#">Trò Chơi Con Mực</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim2.jpg" alt="" /></a>
+                                    <span><a href="#">Avengers - Cuộc chiến vô cực</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim3.jpg" alt="" /></a>
+                                    <span><a href="#">Địa Ngục Đẫm Máu</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim4.jpg" alt="" /></a>
+                                    <span><a href="#">Nộ Hỏa - Raging Fire</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-2">
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim5.jpg" alt="" /></a>
+                                    <span><a href="#">Phi Vụ Triệu Đô</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim6.jpg" alt="" /></a>
+                                    <span><a href="#">King Kong Phần 1</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim7.jpg" alt="" /></a>
+                                    <span><a href="#">Avatar Phần 1</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                <div class="film">
+                                    <a href="#"><img src="./phim8.jpg" alt="" /></a>
+                                    <span><a href="#">Chiến Lang Phần 2</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section-2>
+
+
+                <section-3>
+                    <div class="section-3">
+                        <div class="text-1">
+                            <span>Phim Chiếu Rạp</span>
+                        </div>
+                        <div class="main-fiml">
+                            <div class="row">
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap1.jpg" alt="" /></a>
+                                        <span><a href="#">Bí Mật Đảo Linh Xà</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap2.png" alt="" /></a>
+                                        <span><a href="#">Ngôi Đền Kì Quái 2</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap3.jpg" alt="" /></a>
+                                        <span><a href="#">Đôi Mắt Âm Dương</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap4.png" alt="" /></a>
+                                        <span><a href="#">Chị Mười Ba - 3 Ngày Sinh Tử</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-2">
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film film-2">
+                                        <a href="#"><img src="./phimchieurap5.jpg" alt="" /></a>
+                                        <span><a href="#">Bố Gìa</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap6.jpg" alt="" /></a>
+                                        <span><a href="#">Tiệc Trăng Máu</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap7.jpg" alt="" /></a>
+                                        <span><a href="#">Mắt Biếc</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+                                    <div class="film">
+                                        <a href="#"><img src="./phimchieurap8.jpg" alt="" /></a>
+                                        <span><a href="#">Lật Mặt 48h</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section-3>
+                <section-4>
+                    <div class="section-4">
+                        <div class="text-1">
+                            <span>TRAILER PHIM SẮP RA MẮT</span>
+                        </div>
+                        <div class="trailer">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="main-trailer">
+                                        <img src="./trailer1.jpg" alt="" />
+                                        <span class="btn-play">
+                                            <i class="far fa-play-circle"></i>
+                                        </span>
+                                        <div class="video-screen d-none">
+                                            <span id="icon-close">
+                                                <i class="far fa-window-close"></i>
+                                            </span>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/-FmWuCgJmxo"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <span>Trailer Vendom</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-trailer">
+                                        <img src="./trailer2.jpg" alt="" />
+                                        <span class="btn-play">
+                                            <i class="far fa-play-circle"></i>
+                                        </span>
+                                        <div class="video-screen d-none" class="video-2">
+                                            <span id="icon-close" class="icon-close">
+                                                <i class="far fa-window-close"></i>
+                                            </span>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/Vm3t0goJOGg"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <span>Trailer Rừng Thế Mạng</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="main-trailer">
+                                        <img src="./trailer3.jpg" alt="" />
+                                        <span onclick="click_video(this)" class="btn-play">
+                                            <i class="far fa-play-circle"></i>
+                                        </span>
+                                        <div class="video-screen d-none">
+                                            <span id="icon-close">
+                                                <i class="far fa-window-close"></i>
+                                            </span>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/THXPCF6UHh8"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <span>Trailer Hai Phượng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section-4>
+                <seciton-5>
+                    <div class="section-5">
+                        <div class="text-1">
+                            <span>Tiểu Sử Người Nổi Tiếng</span>
+                        </div>
+                        <div class="main-section-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu1.jpg" alt="">
+                                            <div class="content">
+                                                <span>Thành Long</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Phòng Sĩ
+                                                        Long</span>(tiếng Trung: 房仕龍;[6] sinh ngày 7 tháng 4 năm
+                                                    1954)[7] SBS[8] MBE[9] PMW[10], tên khai sinh Trần Cảng Sinh (tiếng
+                                                    Trung: 陳港生 Về âm thanh nàynghe), thường được biết đến với nghệ danh
+                                                    Thành Long</p>
+                                                <a href="https://vi.wikipedia.org/wiki/Th%C3%A0nh_Long">Xem thêm tại
+                                                    đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu3.jpg" alt="">
+                                            <div class="content">
+                                                <span>Châu Tinh Trì</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Châu
+                                                        Tinh Trì</span> (sinh ngày 22 tháng 6 năm 1962 ) là
+                                                    một nam diễn viên, đạo diễn, nhà biên kịch, nhà sản xuất người Hồng
+                                                    Kông. Ngoài ra ông còn là cố vấn chính trị của Hội nghị Hiệp thương
+                                                    Chính trị Nhân dân Trung Quốc.</p>
+                                                <a href="https://vi.wikipedia.org/wiki/Ch%C3%A2u_Tinh_Tr%C3%AC">Xem thêm
+                                                    tại đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu2.jpg" alt="">
+                                            <div class="content">
+                                                <span>Châu Nhuận Phát</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Châu
+                                                        Nhuận Phát</span> (sinh ngày 18 tháng 5 năm
+                                                    1955)[1] là một nam diễn viên người Hồng Kông, được biết đến khi hợp
+                                                    tác với đạo diễn Ngô Vũ Sâm trong các bộ phim hành động xã hội đen
+                                                </p>
+                                                <a
+                                                    href="https://vi.wikipedia.org/wiki/Ch%C3%A2u_Nhu%E1%BA%ADn_Ph%C3%A1t">Xem
+                                                    thêm
+                                                    tại đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu4.jpg" alt="">
+                                            <div class="content">
+                                                <span>Robert Downey Jr</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Robert
+                                                        John Downey, Jr</span> (sinh ngày 4 tháng 4 năm
+                                                    1965) là một diễn viên người Mỹ.Tham gia diễn xuất từ khi mới 5 tuổi
+                                                    trong phim Pound của cha ông.
+                                                </p>
+                                                <a href="https://vi.wikipedia.org/wiki/Robert_Downey_Jr.">Xem
+                                                    thêm
+                                                    tại đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu5.jpg" alt="">
+                                            <div class="content">
+                                                <span>Việt Anh</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Nguyễn Lê Việt Anh</span> (sinh 8 tháng 9 năm
+                                                    1981) là một diễn viên người Việt Nam. Anh nổi tiếng với vai Cao
+                                                    Thanh Lâm trong bộ phim Chạy án thuộc loạt phim truyền hình Cảnh sát
+                                                    hình sự. Năm 2017, anh tiếp tục thành công với vai diễn cậu ấm Phan
+                                                    Hải trong Người phán xử.
+                                                </p>
+                                                <a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Anh_(di%E1%BB%85n_vi%C3%AAn)">Xem
+                                                    thêm
+                                                    tại đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12">
+                                    <div class="hexagon">
+                                        <div class="shape">
+                                            <img src="tieusu6.jpg" alt="">
+                                            <div class="content">
+                                                <span>Hồng Kim Bảo</span>
+                                                <p><span style="color: red;font-size: 0.9rem;font-weight: 700;">Hồng Kim Bảo</span> (sinh ngày 7 tháng 1 năm 1952) là diễn viên, đạo diễn, nhà sản xuất và chỉ đạo võ thuật của điện ảnh Hồng Kông. Ông bắt đầu tham gia nghệ thuật từ khi nhỏ tuổi với vai trò thành viên nhóm Thất Tiểu Phúc. Ông được biết tới nhiều nhất qua các bộ phim võ thuật
+                                                </p>
+                                                <a href="https://vi.wikipedia.org/wiki/H%E1%BB%93ng_Kim_B%E1%BA%A3o">Xem
+                                                    thêm
+                                                    tại đây</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </seciton-5>
+            </div>
+        </main>
+        <footer>
+
+            <div class="footer">
+                <div class="container container-footer">
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-1">
+                                <span>Thể Loại</span>
+                                <ul>
+                                    <li><a href="">Khoa Học - Viễn Tưởng</a></li>
+                                    <li><a href="">Cổ Trang - Thần Thoại</a></li>
+                                    <li><a href="">Tài Liệu - Khám Phá</a></li>
+                                    <li><a href="">Kinh Dị - Ma</a></li>
+                                    <li><a href="">Hình Sự - Chiến Tranh</a></li>
+                                    <li><a href="">Tâm Lý - Tình Cảm</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-1">
+                                <span>Tìm Kiếm Nhiều Nhất</span>
+                                <ul>
+                                    <li><a href=""><i class="fas fa-tags"></i> Trò Chơi Con Mực</a></li>
+                                    <li><a href=""><i class="fas fa-tags"></i> Chị Mười Ba - 3 Ngày Sinh Tử</a></li>
+                                    <li><a href=""><i class="fas fa-tags"></i> King Kong</a></li>
+                                    <li><a href=""><i class="fas fa-tags"></i> Chiến Lang Phần 2</a></li>
+                                    <li><a href=""><i class="fas fa-tags"></i> Tiệc Trăng Máu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-1">
+                                <span>Thông Tin</span>
+                                <ul>
+                                    <li><a href="">Liên Hệ</a></li>
+                                    <li><a href="">Tin Tức</a></li>
+                                    <li><a href="">Điều Khoản Sử Dụng</a></li>
+                                    <li><a href="">Khiếu Nại Bản Quyền</a></li>
+                                    <li>@Coppyright Độc Quyền NHL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-1">
+                                <img src="./tet-2021.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+    <script>
+        // Search
+        function activateSearchbox(el) {
+            el.classList.add('searchbox--active')
+        }
+        function deactivateSearchbox(el) {
+            el.classList.remove('searchbox--active')
+        }
+
+        function onFocus() {
+            activateSearchbox(document.querySelector('.searchbox'));
+        }
+
+        function onBlur() {
+            deactivateSearchbox(document.querySelector('.searchbox'));
+        }
+
+        // play video 
+        var btnPlayVideos = document.getElementsByClassName('btn-play');
+        var btnCloseVideo = document.getElementById('icon-close');
+        var videoScreens = document.getElementsByClassName('video-screen');
+
+        btnCloseVideo.addEventListener('click', () => {
+            videoScreen.className = "video-screen d-none";
+
+        })
+
+        // btnPlayVideo.addEventListener('click', () => {
+        //     videoScreen.className = "video-screen d-flex";
+
+        // })
+        var ivideo = 0;
+        for (var i = 0; i < btnPlayVideos.length; i++) {
+
+            btnPlayVideos[i].addEventListener('click', (e) => {
+                console.log(ivideo)
+                // console.log(videoScreens[ivideo]);
+                videoScreens[i].className = "video-screen";
+            })
+            ivideo += 1;
+
+            // tooggle
+
+            var button_menu = document.getElementById("menu");
+            var sidebar = document.getElementById("header");
+            var status_sidebar = false;
+            button_menu.addEventListener("click", function () {
+                if (status_sidebar == true) {
+                    sidebar.style.transform = "translateX(-100%)";
+                    status_sidebar = false;
+
+                }
+                else {
+                    sidebar.style.transform = "translateX(0%)";
+                    status_sidebar = true;
+
+
+                }
+            })
+        }
+
+
+
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" type="image/png" href="./lg.jpg">
+    <title>Phim Bộ - Xem Phim Miễn Phí</title>
+</head>
+
+<body>
+    <div class="global-wrap">
+        <header class="header-main">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="./tet-2021.svg" alt="logo" />
+                </div>
+                <div class="menu">
+                    <ul class="main-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="dropdown">
+                            <span>Thể Loại</span>
+                            <div class="dropdown-box">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content dropdown-2">
+                                        <a class="dropdown-item" href="./khoahoc.html">Khoa Học - Viễn Tưởng</a>
+                                        <a class="dropdown-item" href="#">Cổ Trang - Thần Thoại</a>
+                                    </div>
+                                    <div class="dropdown-content dropdown-2">
+                                        <a class="dropdown-item" href="#">Tài Liệu - Khám Phá</a>
+                                        <a class="dropdown-item" href="#">Hình Sự - Chiến Tranh</a>
+
+                                    </div>
+                                    <div class="dropdown-content dropdown-2">
+                                        <a class="dropdown-item" href="#">Kinh Dị - Ma</a>
+                                        <a class="dropdown-item" href="#">Tâm Lý - Tình Cảm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span>Phim Bộ</span>
+                            <div class="dropdown-box dropdown-boxing">
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item" href="#">Việt Nam</a>
+                                    <a class="dropdown-item" href="#">Trung Quốc</a>
+                                    <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Phim Chiếu Rạp</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li class="search-input">
+                            <div class="searchbox" onClick="onClick(event)">
+                                <input type="text" onFocus="onFocus()" onBlur="onBlur()"
+                                    placeholder="Tìm kiếm tên phim" />
+                                <button>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="login-form" href="./login.html">Đăng Nhập / Đăng Kí</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            
+        </main>
+    </div>
+
+
+
+
+    <script>
+        // Search
+        function activateSearchbox(el) {
+            el.classList.add('searchbox--active')
+        }
+        function deactivateSearchbox(el) {
+            el.classList.remove('searchbox--active')
+        }
+
+        function onFocus() {
+            activateSearchbox(document.querySelector('.searchbox'));
+        }
+
+        function onBlur() {
+            deactivateSearchbox(document.querySelector('.searchbox'));
+        }
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
